@@ -2,8 +2,7 @@ language: go
 sudo: false
 os:
   - linux
-  - osx
-  - windows
+    arch: arm64
 go:
   - "1.16"
 script:
