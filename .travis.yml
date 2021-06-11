@@ -8,3 +8,13 @@ go:
 script:
     - go test -v .
     - cd cli/brook && go get -t -v . && go build .
+deploy:
+  provider: releases
+  api_key: ${GIT_TOKEN}
+  file: 
+    - brook
+  skip_cleanup: true
+  on:
+    tags: true
+    all_branches: true
+    branch: master
