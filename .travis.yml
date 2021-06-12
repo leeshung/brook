@@ -2,7 +2,9 @@ language: go
 sudo: false
 os:
   - linux
-arch: arm64
+arch: 
+  - arm64
+dist: Bionic
 go:
   - "1.16"
 script:

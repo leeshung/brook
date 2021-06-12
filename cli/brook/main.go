@@ -40,7 +40,7 @@ var debugAddress string
 func main() {
 	app := cli.NewApp()
 	app.Name = "Brook"
-	app.Version = "20210601"
+	app.Version = "20210612"
 	app.Usage = "A cross-platform strong encryption and not detectable proxy"
 	app.Authors = []*cli.Author{
 		{
@@ -260,7 +260,7 @@ func main() {
 				&cli.StringFlag{
 					Name:    "to",
 					Aliases: []string{"t"},
-					Usage:   "Map to where, like: 8.8.8.8:53",
+					Usage:   "Map to where, like: 180.76.76.76:53",
 				},
 				&cli.IntFlag{
 					Name:  "tcpTimeout",
@@ -386,7 +386,7 @@ func main() {
 				&cli.StringFlag{
 					Name:  "dnsForDefault",
 					Usage: "DNS server for resolving domains NOT in list",
-					Value: "8.8.8.8:53",
+					Value: "180.76.76.76:53",
 				},
 				&cli.StringFlag{
 					Name:  "dnsForBypass",
