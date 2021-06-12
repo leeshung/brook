@@ -316,7 +316,7 @@ func main() {
 				&cli.StringFlag{
 					Name:  "dns",
 					Usage: "DNS server for resolving domains NOT in list",
-					Value: "8.8.8.8:53",
+					Value: "180.76.76.76:53",
 				},
 				&cli.StringFlag{
 					Name:  "dnsForBypass",

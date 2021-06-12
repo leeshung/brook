@@ -19,7 +19,7 @@ import (
 	"net"
 	"net/url"
 
-	"github.com/txthinking/socks5"
+	"github.com/leeshung/socks5"
 )
 
 func ErrorReply(r *socks5.Request, c *net.TCPConn, e error) error {

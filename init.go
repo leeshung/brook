@@ -15,7 +15,7 @@
 package brook
 
 import (
-	"github.com/txthinking/socks5"
+	"github.com/leeshung/socks5"
 	"github.com/txthinking/x"
 )
 

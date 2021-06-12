@@ -25,7 +25,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/txthinking/socks5"
+	"github.com/leeshung/socks5"
 	"github.com/txthinking/x"
 	"golang.org/x/crypto/hkdf"
 )

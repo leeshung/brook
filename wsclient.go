@@ -32,7 +32,7 @@ import (
 
 	cache "github.com/patrickmn/go-cache"
 	"github.com/txthinking/brook/limits"
-	"github.com/txthinking/socks5"
+	"github.com/leeshung/socks5"
 	x1 "github.com/txthinking/x"
 )
 

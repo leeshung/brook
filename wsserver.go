@@ -27,7 +27,7 @@ import (
 	"github.com/gorilla/websocket"
 	cache "github.com/patrickmn/go-cache"
 	"github.com/txthinking/brook/limits"
-	"github.com/txthinking/socks5"
+	"github.com/leeshung/socks5"
 	"github.com/urfave/negroni"
 	"golang.org/x/crypto/acme/autocert"
 )

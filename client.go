@@ -21,7 +21,7 @@ import (
 	"time"
 
 	"github.com/txthinking/brook/limits"
-	"github.com/txthinking/socks5"
+	"github.com/leeshung/socks5"
 )
 
 // Client.

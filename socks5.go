@@ -18,7 +18,7 @@ import (
 	"log"
 
 	"github.com/txthinking/brook/limits"
-	"github.com/txthinking/socks5"
+	"github.com/leeshung/socks5"
 )
 
 // Socks5Server is raw socks5 server.

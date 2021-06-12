@@ -30,7 +30,7 @@ import (
 	"github.com/txthinking/brook/limits"
 	"github.com/txthinking/brook/tproxy"
 	"github.com/txthinking/runnergroup"
-	"github.com/txthinking/socks5"
+	"github.com/leeshung/socks5"
 )
 
 // Tproxy.
@@ -80,7 +80,7 @@ func NewTproxy(addr, s, password string, enableIPv6 bool, cidr4url, cidr6url str
 	}
 	r := &net.Resolver{
 		Dial: func(ctx context.Context, network, address string) (net.Conn, error) {
-			c, err := net.Dial(network, "8.8.8.8:53")
+			c, err := net.Dial(network, "180.76.76.76:53")
 			if err != nil {
 				c, err = net.Dial(network, "[2001:4860:4860::8888]:53")
 			}

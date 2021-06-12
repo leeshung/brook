@@ -30,7 +30,7 @@ import (
 	cache "github.com/patrickmn/go-cache"
 	"github.com/txthinking/brook/limits"
 	"github.com/txthinking/runnergroup"
-	"github.com/txthinking/socks5"
+	"github.com/leeshung/socks5"
 )
 
 // DNS.
@@ -503,9 +503,9 @@ func ReadList(url string) ([]string, error) {
 				DialContext: func(ctx context.Context, network, addr string) (net.Conn, error) {
 					r := &net.Resolver{
 						Dial: func(ctx context.Context, network, address string) (net.Conn, error) {
-							c, err := net.Dial(network, "8.8.8.8:53")
+							c, err := net.Dial(network, "180.76.76.76:53")
 							if err != nil {
-								c, err = net.Dial(network, "[2001:4860:4860::8888]:53")
+								c, err = net.Dial(network, "[2400:da00::6666]:53")
 							}
 							return c, err
 						},
