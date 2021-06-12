@@ -4,12 +4,12 @@ os:
   - linux
 arch: 
   - arm64
-dist: Bionic
+dist: bionic
 go:
   - "1.16"
 script:
     - go test -v .
-    - cd cli/brook && mkdir out && go get -t -v . && go build -ldflags="-w -s" -o out/brook_linux_arm64 .
+    - cd cli/brook && mkdir out && go get -t -v . && CGO_ENABLED=0  GOOS=linux GOARCH=arm64 go build -ldflags="-w -s" -o out/brook_linux_arm64 .
 deploy:
   provider: releases
   api_key: ${GIT_TOKEN}
