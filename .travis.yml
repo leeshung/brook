@@ -7,12 +7,12 @@ go:
   - "1.16"
 script:
     - go test -v .
-    - cd cli/brook && go get -t -v . && go build .
+    - cd cli/brook && mkdir out && go get -t -v . && go build -ldflags="-w -s" -o out/brook_linux_arm64 .
 deploy:
   provider: releases
   api_key: ${GIT_TOKEN}
   file: 
-    - brook
+    - out/brook_linux_arm64
   skip_cleanup: true
   on:
     all_branches: true
